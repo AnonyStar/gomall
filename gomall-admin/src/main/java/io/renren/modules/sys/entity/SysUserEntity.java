@@ -11,8 +11,8 @@ package io.renren.modules.sys.entity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import io.renren.common.validator.group.AddGroup;
-import io.renren.common.validator.group.UpdateGroup;
+import online.icode.gomall.common.validator.group.AddGroup;
+import online.icode.gomall.common.validator.group.UpdateGroup;
 import lombok.Data;
 
 import javax.validation.constraints.Email;

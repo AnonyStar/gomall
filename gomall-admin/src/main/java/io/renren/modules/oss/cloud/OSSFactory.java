@@ -9,9 +9,9 @@
 package io.renren.modules.oss.cloud;
 
 
-import io.renren.common.utils.ConfigConstant;
-import io.renren.common.utils.Constant;
-import io.renren.common.utils.SpringContextUtils;
+import online.icode.gomall.common.utils.ConfigConstant;
+import online.icode.gomall.common.utils.Constant;
+import online.icode.gomall.common.utils.SpringContextUtils;
 import io.renren.modules.sys.service.SysConfigService;
 
 /**

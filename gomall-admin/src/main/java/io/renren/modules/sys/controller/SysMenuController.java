@@ -8,10 +8,10 @@
 
 package io.renren.modules.sys.controller;
 
-import io.renren.common.annotation.SysLog;
-import io.renren.common.exception.RRException;
-import io.renren.common.utils.Constant;
-import io.renren.common.utils.R;
+import online.icode.gomall.common.annotation.SysLog;
+import online.icode.gomall.common.exception.RRException;
+import online.icode.gomall.common.utils.Constant;
+import online.icode.gomall.common.utils.R;
 import io.renren.modules.sys.entity.SysMenuEntity;
 import io.renren.modules.sys.service.ShiroService;
 import io.renren.modules.sys.service.SysMenuService;

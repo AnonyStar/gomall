@@ -8,8 +8,8 @@
 
 package io.renren.modules.job.utils;
 
-import io.renren.common.exception.RRException;
-import io.renren.common.utils.Constant;
+import online.icode.gomall.common.exception.RRException;
+import online.icode.gomall.common.utils.Constant;
 import io.renren.modules.job.entity.ScheduleJobEntity;
 import org.quartz.*;
 

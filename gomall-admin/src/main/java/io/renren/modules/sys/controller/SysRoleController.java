@@ -8,11 +8,11 @@
 
 package io.renren.modules.sys.controller;
 
-import io.renren.common.annotation.SysLog;
-import io.renren.common.utils.Constant;
-import io.renren.common.utils.PageUtils;
-import io.renren.common.utils.R;
-import io.renren.common.validator.ValidatorUtils;
+import online.icode.gomall.common.annotation.SysLog;
+import online.icode.gomall.common.utils.Constant;
+import online.icode.gomall.common.utils.PageUtils;
+import online.icode.gomall.common.utils.R;
+import online.icode.gomall.common.validator.ValidatorUtils;
 import io.renren.modules.sys.entity.SysRoleEntity;
 import io.renren.modules.sys.service.SysRoleMenuService;
 import io.renren.modules.sys.service.SysRoleService;

@@ -8,14 +8,14 @@
 
 package io.renren.modules.sys.controller;
 
-import io.renren.common.annotation.SysLog;
-import io.renren.common.utils.Constant;
-import io.renren.common.utils.PageUtils;
-import io.renren.common.utils.R;
-import io.renren.common.validator.Assert;
-import io.renren.common.validator.ValidatorUtils;
-import io.renren.common.validator.group.AddGroup;
-import io.renren.common.validator.group.UpdateGroup;
+import online.icode.gomall.common.annotation.SysLog;
+import online.icode.gomall.common.utils.Constant;
+import online.icode.gomall.common.utils.PageUtils;
+import online.icode.gomall.common.utils.R;
+import online.icode.gomall.common.validator.Assert;
+import online.icode.gomall.common.validator.ValidatorUtils;
+import online.icode.gomall.common.validator.group.AddGroup;
+import online.icode.gomall.common.validator.group.UpdateGroup;
 import io.renren.modules.sys.entity.SysUserEntity;
 import io.renren.modules.sys.form.PasswordForm;
 import io.renren.modules.sys.service.SysUserRoleService;

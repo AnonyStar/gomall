@@ -9,15 +9,15 @@
 package io.renren.modules.oss.controller;
 
 import com.google.gson.Gson;
-import io.renren.common.exception.RRException;
-import io.renren.common.utils.ConfigConstant;
-import io.renren.common.utils.Constant;
-import io.renren.common.utils.PageUtils;
-import io.renren.common.utils.R;
-import io.renren.common.validator.ValidatorUtils;
-import io.renren.common.validator.group.AliyunGroup;
-import io.renren.common.validator.group.QcloudGroup;
-import io.renren.common.validator.group.QiniuGroup;
+import online.icode.gomall.common.exception.RRException;
+import online.icode.gomall.common.utils.ConfigConstant;
+import online.icode.gomall.common.utils.Constant;
+import online.icode.gomall.common.utils.PageUtils;
+import online.icode.gomall.common.utils.R;
+import online.icode.gomall.common.validator.ValidatorUtils;
+import online.icode.gomall.common.validator.group.AliyunGroup;
+import online.icode.gomall.common.validator.group.QcloudGroup;
+import online.icode.gomall.common.validator.group.QiniuGroup;
 import io.renren.modules.oss.cloud.CloudStorageConfig;
 import io.renren.modules.oss.cloud.OSSFactory;
 import io.renren.modules.oss.entity.SysOssEntity;

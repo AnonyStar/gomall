@@ -9,9 +9,9 @@
 package io.renren.modules.oss.cloud;
 
 
-import io.renren.common.validator.group.AliyunGroup;
-import io.renren.common.validator.group.QcloudGroup;
-import io.renren.common.validator.group.QiniuGroup;
+import online.icode.gomall.common.validator.group.AliyunGroup;
+import online.icode.gomall.common.validator.group.QcloudGroup;
+import online.icode.gomall.common.validator.group.QiniuGroup;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;

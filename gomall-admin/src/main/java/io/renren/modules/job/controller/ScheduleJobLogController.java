@@ -8,8 +8,8 @@
 
 package io.renren.modules.job.controller;
 
-import io.renren.common.utils.PageUtils;
-import io.renren.common.utils.R;
+import online.icode.gomall.common.utils.PageUtils;
+import online.icode.gomall.common.utils.R;
 import io.renren.modules.job.entity.ScheduleJobLogEntity;
 import io.renren.modules.job.service.ScheduleJobLogService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;

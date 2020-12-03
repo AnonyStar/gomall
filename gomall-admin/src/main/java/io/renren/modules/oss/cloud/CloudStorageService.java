@@ -8,7 +8,7 @@
 
 package io.renren.modules.oss.cloud;
 
-import io.renren.common.utils.DateUtils;
+import online.icode.gomall.common.utils.DateUtils;
 import org.apache.commons.lang.StringUtils;
 
 import java.io.InputStream;

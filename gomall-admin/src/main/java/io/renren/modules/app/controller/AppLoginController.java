@@ -9,8 +9,8 @@
 package io.renren.modules.app.controller;
 
 
-import io.renren.common.utils.R;
-import io.renren.common.validator.ValidatorUtils;
+import online.icode.gomall.common.utils.R;
+import online.icode.gomall.common.validator.ValidatorUtils;
 import io.renren.modules.app.form.LoginForm;
 import io.renren.modules.app.service.UserService;
 import io.renren.modules.app.utils.JwtUtils;
