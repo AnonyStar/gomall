@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import online.icode.gomall.product.service.impl.AttrAttrgroupRelationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,7 +29,7 @@ import online.icode.gomall.common.utils.R;
 @RestController
 @RequestMapping("product/attrattrgrouprelation")
 public class AttrAttrgroupRelationController {
-    @Autowired
+     @Autowired
     private AttrAttrgroupRelationService attrAttrgroupRelationService;
 
     /**

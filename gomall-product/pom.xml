@@ -21,6 +21,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>online.i-code.gomall</groupId>
+			<artifactId>gomall-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
 			<version>3.3.1</version>

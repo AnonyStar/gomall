@@ -9,7 +9,7 @@
 package io.renren.modules.sys.oauth2;
 
 import com.google.gson.Gson;
-import online.icode.gomall.common.utils.HttpContextUtils;
+import io.renren.common.utils.HttpContextUtils;
 import online.icode.gomall.common.utils.R;
 import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpStatus;

@@ -1,0 +1,29 @@
+server:
+  port: 6666
+  servlet:
+    session:
+      timeout: 30m
+spring:
+  application:
+    name: gomall-member
+  datasource:
+    url: jdbc:mysql://192.168.56.10:3306/gomall_ums?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+logging:
+  level:
+    root: info

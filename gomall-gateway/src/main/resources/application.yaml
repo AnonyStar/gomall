@@ -1,0 +1,29 @@
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: baidu_route
+          predicates:
+            - Query=url, baidu
+          uri: https://www.baidu.com
+        - id: qq_route
+          uri: https://www.qq.com
+          predicates:
+            - Query=url, qq
+
+        - id: product_route
+          uri: lb://gomall-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*), /$\{segment}
+
+        - id: admin_route
+          uri: lb://gomall-admin
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*), /gomall-admin/$\{segment}
+server:
+  port: 88

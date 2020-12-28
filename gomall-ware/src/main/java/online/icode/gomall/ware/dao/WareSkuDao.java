@@ -1,0 +1,17 @@
+package online.icode.gomall.ware.dao;
+
+import online.icode.gomall.ware.entity.WareSkuEntity;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * 商品库存
+ * 
+ * @author AnonyStar
+ * @email AnonyStarCode@gmail.com
+ * @date 2020-12-23 14:59:26
+ */
+@Mapper
+public interface WareSkuDao extends BaseMapper<WareSkuEntity> {
+	
+}

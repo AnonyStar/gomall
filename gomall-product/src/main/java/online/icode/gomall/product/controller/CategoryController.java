@@ -1,11 +1,14 @@
 package online.icode.gomall.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import online.icode.gomall.product.vo.CategoryVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,14 +35,14 @@ public class CategoryController {
     private CategoryService categoryService;
 
     /**
-     * 列表
+     * 查询分类树结构列表
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/tree")
     //@RequiresPermissions("product:category:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = categoryService.queryPage(params);
+    public R list(){
 
-        return R.ok().put("page", page);
+       List<CategoryVo> list = categoryService.listWithTree();
+        return R.ok().put("data", list);
     }
 
 
@@ -79,11 +82,11 @@ public class CategoryController {
     /**
      * 删除
      */
-    @RequestMapping("/delete")
+    @PostMapping("/delete")
     //@RequiresPermissions("product:category:delete")
     public R delete(@RequestBody Long[] catIds){
-		categoryService.removeByIds(Arrays.asList(catIds));
-
+		//categoryService.removeByIds(Arrays.asList(catIds));
+        categoryService.removeMenusByIds(Arrays.asList(catIds));
         return R.ok();
     }
 
