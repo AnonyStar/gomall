@@ -4,8 +4,11 @@ import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
+import online.icode.gomall.product.vo.ModifyBrandVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,6 +19,7 @@ import online.icode.gomall.product.service.BrandService;
 import online.icode.gomall.common.utils.PageUtils;
 import online.icode.gomall.common.utils.R;
 
+import javax.validation.Valid;
 
 
 /**
@@ -57,10 +61,11 @@ public class BrandController {
     /**
      * 保存
      */
-    @RequestMapping("/save")
+    @PostMapping("/save")
     //@RequiresPermissions("product:brand:save")
-    public R save(@RequestBody BrandEntity brand){
-		brandService.save(brand);
+    public R save(@Valid @RequestBody ModifyBrandVo brand) throws InstantiationException, IllegalAccessException {
+
+		brandService.save(brand.clone(BrandEntity.class));
 
         return R.ok();
     }
@@ -71,6 +76,13 @@ public class BrandController {
     @RequestMapping("/update")
     //@RequiresPermissions("product:brand:update")
     public R update(@RequestBody BrandEntity brand){
+		brandService.updateById(brand);
+
+        return R.ok();
+    }
+    @PostMapping("/update/status")
+    //@RequiresPermissions("product:brand:update")
+    public R updateStatus(@RequestBody BrandEntity brand){
 		brandService.updateById(brand);
 
         return R.ok();

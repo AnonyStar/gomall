@@ -66,12 +66,13 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
     @Override
     public void removeMenusByIds(List<Long> asList) {
+        //逻辑删除
         final int i = baseMapper.deleteBatchIds(asList);
     }
 
     private List<CategoryVo> getChildren(CategoryVo root, List<CategoryVo> total) {
         final List<CategoryVo> list = total.stream()
-                .filter(cate -> cate.getParentCid() == root.getCatId())
+                .filter(cate -> cate.getParentCid().equals(root.getCatId()))
                 .map(cate -> {
                     cate.setCategoryVo(getChildren(cate, total));
                     return cate;

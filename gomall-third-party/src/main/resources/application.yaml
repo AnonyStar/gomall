@@ -1,0 +1,23 @@
+server:
+  port: 40000
+  servlet:
+    session:
+      timeout: 30s
+
+spring:
+  application:
+    name: gomall-third-party
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    alicloud:
+      access-key: LTAI4GCGMuTDkRWC8P2gZyPM
+      secret-key: gxNC9JVmGIPBzbFHy92smOG72l22LW
+      oss:
+        endpoint: oss-cn-hongkong.aliyuncs.com
+        bucket: i-code
+
+logging:
+  level:
+    root: debug

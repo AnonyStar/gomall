@@ -17,5 +17,8 @@
         <module>gomall-product</module>
         <module>gomall-ware</module>
         <module>gomall-admin</module>
+        <module>gomall-common</module>
+        <module>gomall-gateway</module>
+        <module>renren-generator</module>
     </modules>
 </project>
