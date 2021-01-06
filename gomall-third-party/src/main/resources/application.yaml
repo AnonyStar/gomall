@@ -13,7 +13,7 @@ spring:
         server-addr: 127.0.0.1:8848
     alicloud:
       access-key: LTAI4GCGMuTDkRWC8P2gZyPM
-      secret-key: gxNC9JVmGIPBzbFHy92smOG72l22LW
+      secret-key:
       oss:
         endpoint: oss-cn-hongkong.aliyuncs.com
         bucket: i-code
