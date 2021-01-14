@@ -34,9 +34,9 @@ public class AttrGroupController {
     /**
      * 列表
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/{cid}")
     //@RequiresPermissions("product:attrgroup:list")
-    public R list(@RequestParam Map<String, Object> params){
+    public R list(@RequestParam Map<String, Object> params,@PathVariable("cid")Integer cid){
         PageUtils page = attrGroupService.queryPage(params);
 
         return R.ok().put("page", page);

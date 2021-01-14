@@ -1,4 +1,3 @@
-/*
 package online.icode.gomall.product.exception;
 
 import lombok.extern.slf4j.Slf4j;
@@ -12,12 +11,10 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.HashMap;
 import java.util.Map;
 
-*/
 /**
  * @author: zhoucx
  * @time: 2021/1/2 21:36
- *//*
-
+ */
 
 @Slf4j
 @RestControllerAdvice(basePackages = {"online.icode.gomall.product.controller"})
@@ -39,4 +36,3 @@ public class GomallExceptionAdivce {
         return R.error(BizCodeEnum.UNKNOW_EXEPTION.getCode(), BizCodeEnum.UNKNOW_EXEPTION.getMsg());
     }
 }
-*/

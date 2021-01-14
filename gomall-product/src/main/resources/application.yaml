@@ -26,4 +26,4 @@ mybatis-plus:
 
 logging:
   level:
-    root: debug
+    online.icode.gomall: debug
